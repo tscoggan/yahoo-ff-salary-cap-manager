@@ -1,0 +1,23 @@
+yahoo {
+    api_key = "???????" // get from Yahoo Developer's Network when you register a new app
+    api_secret = "???????" // get from Yahoo Developer's Network when you register a new app
+    query_cache_expiration_in_hours = 1
+    
+    league_key = "???????" // format: <game_key>.l.<league_id> where "nfl" game key is current season
+    
+    historical_league_keys = [
+    	{ season = 2016, league_key = "???????" },
+    	{ season = 2015, league_key = "???????" }	    
+    ]
+}
+
+database {
+	url = "jdbc:h2:file:./data/database"
+	user = "admin"
+	password = "admin"
+	schema = "TEST"
+}
+
+league_rules {
+	max_contract_length = 3
+}
